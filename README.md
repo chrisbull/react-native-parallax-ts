@@ -1,3 +1,3 @@
-# react-native-parallax
+# react-native-parallax-ts
 
-react-native-parallax
+react-native-parallax-ts

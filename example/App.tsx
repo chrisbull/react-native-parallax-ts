@@ -1,8 +1,7 @@
 import * as React from 'react'
 import { Dimensions, PixelRatio, ScrollView, StyleSheet, Text, View } from 'react-native'
 
-import { ParallaxImage } from '../src/ParallaxImage'
-import { ParallaxScrollView } from '../src/ParallaxScrollViewComposition'
+import { ParallaxImage, ParallaxScrollView } from 'react-native-parallax-ts'
 
 const IMAGE_WIDTH = Dimensions.get('window').width
 const IMAGE_HEIGHT = IMAGE_WIDTH / 2
