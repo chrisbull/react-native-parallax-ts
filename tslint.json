@@ -1,34 +1,74 @@
 {
-  "extends": ["tslint:latest", "tslint-config-prettier", "tslint-immutable"],
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-standard",
+    "tslint-react",
+    "tslint-plugin-prettier",
+    "tslint-config-prettier"
+  ],
+  "cliOptions": {
+    "exclude": [
+      "node_modules",
+      "dist",
+      "lib"
+    ]
+  },
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**"
+    ]
+  },
   "rules": {
-    "interface-name": [true, "never-prefix"],
-    // TODO: allow devDependencies only in **/*.spec.ts files:
-    // waiting on https://github.com/palantir/tslint/pull/3708
-    "no-implicit-dependencies": [true, "dev"],
-
-    /* tslint-immutable rules */
-    // Recommended built-in rules
-    "no-var-keyword": true,
-    "no-parameter-reassignment": true,
-    "typedef": [true, "call-signature"],
-
-    // Immutability rules
-    "readonly-keyword": true,
-    "readonly-array": true,
-    "no-let": true,
-    "no-object-mutation": true,
-    "no-delete": true,
-    "no-method-signature": true,
-
-    // Functional style rules
-    "no-this": true,
-    "no-class": true,
-    "no-mixed-interface": true,
-    "no-expression-statement": [
+    "max-line-length": [
       true,
-      { "ignore-prefix": ["console.", "process.exit"] }
+      120
     ],
-    "no-if-statement": true
-    /* end tslint-immutable rules */
-  }
+    "jsx-boolean-value": false,
+    "no-floating-promises": false,
+    "no-console": false,
+    "arrow-parens": true,
+    "no-empty-interface": false,
+    "arrow-return-shorthand": true,
+    "jsx-no-lambda": false,
+    "member-access": false,
+    "interface-name": false,
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "static-field",
+          "instance-field",
+          "constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "object-literal-sort-keys": false,
+    "only-arrow-functions": [
+      true,
+      "allow-declarations",
+      "allow-named-functions"
+    ],
+    "prettier": [
+      true,
+      {
+        "arrowParens": "always",
+        "bracketSpacing": true,
+        "printWidth": 120,
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "all",
+        "useTabs": false
+      }
+    ],
+    "semicolon": false,
+    "trailing-comma": true,
+    "whitespace": true
+  },
+  "rulesDirectory": [
+    "tslint-plugin-prettier"
+  ]
 }
