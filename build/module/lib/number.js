@@ -1,0 +1,7 @@
+export function double(value) {
+    return value * 2;
+}
+export function power(base, exponent) {
+    return base ** exponent;
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnVtYmVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vc3JjL2xpYi9udW1iZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcUJBLE1BQU0sVUFBVSxNQUFNLENBQUMsS0FBYTtJQUNsQyxPQUFPLEtBQUssR0FBRyxDQUFDLENBQUM7QUFDbkIsQ0FBQztBQW1CRCxNQUFNLFVBQVUsS0FBSyxDQUFDLElBQVksRUFBRSxRQUFnQjtJQUVsRCxPQUFPLElBQUksSUFBSSxRQUFRLENBQUM7QUFDMUIsQ0FBQyJ9
